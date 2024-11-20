@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Job Application Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Job Application Survey</h1>
+      <p id="description">Complete this form with the required information</p>
+    </header>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" class="name">Name <input id="name" name="name" type="text" required placeholder="Enter your name"/></label>
+        <label id="email-label" class="email">Email <input id="email" name="email" type="email" required placeholder="Enter your Email"/></label>
+       <label id="number-label" class="number">Age <input id="number" name="age" type="number" required min="17" max="110" placeholder="Enter your age"/></label>
+     </fieldset>
+     <fieldset>
+       <label for="dropdown" class="inline">What degree do you have?
+        <select id="dropdown">
+          <option disabled selected value>Select your degree</option>
+          <option value="1">Law</option>
+          <option value="2">Computer Science</option>
+          <option value="3">Finance</option>
+          <option value="4">Business Administration</option>
+         </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>What's your availability to work?</p>
+          <label for="full-time" class="inline"><input id="full-time" type="radio" name="availability" class="inline" value="full-time" checked /> Full-time</label>
+          <label for="part-time" class="inline"><input id="part-time" type="radio" name="availability" class="inline" value="part-time" /> Part-time</label>
+      </fieldset>
+      <fieldset>
+        <p>When can you start working?</p>
+          <label for="tomorrow" class="inline"><input id="tomorrow" type="radio" name="start-working" class="inline" value="tomorrow" checked /> Tomorrow</label>
+          <label for="next-week" class="inline"><input id="next-week" type="radio" name="start-working" class="inline" value="next-week" /> Next week</label>
+          <label for="next-month" class="inline"><input id="next-month" type="radio" name="start-working" class="inline" value="next-month" /> Next month</label>
+        </fieldset>
+        <fieldset>
+          <p>Expected benefits</p>
+          <label for="vacation"><input id="vacation" type="checkbox" name="benefits" class="inline" value="vacation" /> 10 Days of vacation</label>
+          <label for="health"><input id="health" type="checkbox" name="benefits" class="inline" value="health"/> Health care</label>
+          <label for="raise"><input id="raise" type="checkbox" name="benefits" class="inline" value="raise"  /> Pay raise every year</label>
+          <label for="retirement"><input id="retirement" type="checkbox" name="benefits" class="inline" value="retirement" /> Retirement savings plans</label>
+        </fieldset>
+        <fieldset>
+          <label>
+            <p>Tell us about yourself</p>
+            <textarea id="bio" name="bio" rows="4" cols="30" placeholder="Briefly describe yourself..." maxlenght="150" class="textarea"></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
+</html>
